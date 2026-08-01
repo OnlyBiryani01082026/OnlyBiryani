@@ -1,0 +1,186 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+.hero{
+padding:40px 20px;
+text-align:center;
+background:linear-gradient(180deg,#000,#111);
+}
+
+.logo{
+width:220px;
+max-width:90%;
+margin-bottom:20px;
+filter:drop-shadow(0 0 18px #7CFF3A);
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0);}
+}
+
+.hero h1{
+font-size:55px;
+color:#fff;
+letter-spacing:2px;
+}
+
+.hero p{
+font-size:22px;
+color:#8cff2e;
+margin:15px 0 35px;
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.btn{
+padding:15px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.green{
+background:#8cff2e;
+color:#000;
+}
+
+.white{
+background:#fff;
+color:#000;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px #8cff2e;
+}
+
+.menu{
+padding:60px 20px;
+text-align:center;
+}
+
+.menu h2,
+.about h2,
+.contact h2{
+font-size:40px;
+color:#8cff2e;
+margin-bottom:30px;
+}
+
+.menuImage{
+width:100%;
+max-width:900px;
+border-radius:18px;
+border:3px solid #8cff2e;
+box-shadow:0 0 30px rgba(140,255,46,.4);
+cursor:pointer;
+transition:.3s;
+}
+
+.menuImage:hover{
+transform:scale(1.02);
+}
+
+.download{
+display:inline-block;
+margin-top:25px;
+padding:16px 30px;
+background:#8cff2e;
+color:#000;
+font-weight:700;
+text-decoration:none;
+border-radius:12px;
+}
+
+.about{
+padding:60px 20px;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:#111;
+padding:25px;
+border:2px solid #8cff2e;
+border-radius:15px;
+font-size:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #8cff2e;
+}
+
+.contact{
+padding:60px 20px;
+text-align:center;
+font-size:20px;
+line-height:2;
+}
+
+footer{
+padding:25px;
+background:#050505;
+text-align:center;
+color:#bbb;
+margin-top:40px;
+border-top:1px solid #222;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.logo{
+width:170px;
+}
+
+.menu h2,
+.about h2,
+.contact h2{
+font-size:30px;
+}
+
+.btn{
+width:100%;
+max-width:320px;
+}
+
+.card{
+font-size:18px;
+}
+
+}
